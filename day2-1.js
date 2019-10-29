@@ -8,7 +8,7 @@
 
 var testcalc = {};
 
-testcalc.add = function(a, b) {
+testcalc.add = function (a, b) {
 
     return a + b;
 };
@@ -64,5 +64,63 @@ console.log('basename : ' + basename);
 var extname = path.extname(filePath);
 console.log('extname : ' + extname);
 
+
+var name;
+name = '양금모';
+console.log('name : ' + name);
+
+var age = 22;
+console.log('age :' + age);
+
+var person = {};
+
+person['name'] = '방국봉';
+person['age'] = 26;
+console.log(person);
+
+function add(a, b) {
+    return a + b;
+
+}
+
+var result = add(10, 10);
+
+console.log("result : " + result);
+
+
+
+var person = {
+    name: '박비듬',
+    age: 21,
+    add: function (a, b) {
+        return a + b;
+    }
+};
+
+console.log('person.add : ' + person.add(30, 50));
+
+
+
+var names = ['조까치', '나쌍년', '방국봉'];
+
+var users = [{name : '조까치', age : 20}, {name : '나쌍년', age : 15}];
+
+users.push({name : '방국봉', age : 26 });
+
+console.log('users count : ' + users.length);
+
+console.log('user 첫번째 사용자 이름 : '  + users[0].name);
+console.log('user 첫번째 사용자 나이 : '  + users[0].age);
+
+var users2 = [{name : '조까치', age : 20}, {name : '나쌍년', age : 15}];
+
+var oper = function(a, b) {
+    return a + b;
+}
+
+users2.push(oper);
+
+console.dir(users2);
+console.log('세번째 배열 요소를 함수로 실행 : ' + users2[2](10, 10) );
 
 
